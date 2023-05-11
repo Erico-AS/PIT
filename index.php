@@ -4,9 +4,9 @@
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Formap - Log</title>
-        <link rel="icon" type="image/png" href="assets/images/material-logo.png"/>
-        <meta name='viewport' content='width=device-width, initial-scale=1'/>
-        <link rel='stylesheet' type='text/css' media='screen' href='main.css'/>
+        <link rel="icon" type="image/png" href="assets/images/material-logo.png">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     </head>
 
     <body>
