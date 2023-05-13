@@ -4,6 +4,9 @@ const formBx = document.querySelector('.formBx');
 const body = document.querySelector('body')
 const formulario = document.querySelector('#formulario')
 const btnMud = document.querySelector('#btnMud')
+const titulo = document.querySelector('h3')
+const esqueceuSenha = document.querySelector('a')
+
 
 var inpNome = document.createElement('input')
 inpNome.type = "text"
@@ -20,18 +23,20 @@ signupBtn.onclick = function(){
     formulario.appendChild(inpConfirmar)
     formulario.appendChild(inpNome)
 
-    btnMud.innerText = "Cadastrar"
-
+    btnMud.value = "Cadastrar"
+    titulo.textContent = "Cadastrar - Formap"
+    esqueceuSenha.style.visibility = 'hidden'
 }
 
 signinBtn.onclick = function(){
     formBx.classList.remove('active')
     body.classList.remove('active')
 
-    btnMud.innerText = "Logar"
+    btnMud.value = "Login"
+    titulo.textContent = "Login - Formap"
+    esqueceuSenha.style.visibility = 'inherit'
+
 
     formulario.removeChild(inpConfirmar)
-    formulario.removeChild(inpUser)
     formulario.removeChild(inpNome)
-
 }

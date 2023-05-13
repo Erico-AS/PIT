@@ -68,10 +68,14 @@ body {
     border: none;
 }
 
+#dFantasma {
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+}
 .formBx {
     position: absolute;
-    top: 0;
-    left: 0;
+    left: 10vw;
     width: 40%;
     height: 93vh;
     background: #fff;
@@ -91,7 +95,7 @@ body {
 .formBx form {
     left: 0;
     width: 100%;
-    padding: 50px;
+    padding: 0px 50px 0px 50px;
     transition: 0.5s;
     height: auto;
 }
@@ -139,17 +143,6 @@ body {
     color: #333;
 }
 
-.voltar {
-    margin-top: 40px;
-    cursor: pointer;
-    padding: 10px 20px;
-    background: #fff;
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
-    border: none;
-}
-
 a  {
     display: flex;
     justify-content: center;
@@ -190,8 +183,9 @@ h3 {
     background-color: lawngreen;
     border-radius: 30px;
     border: none;
+    transition: opacity 0.5s ease-out;
 }
 
-#btnMud::hover {
-    background-color: green;
+#btnMud:hover {
+    opacity: 0.6;
 }
