@@ -14,7 +14,7 @@
         <div class="signinForm" id="dFantasma">
             <form class="teste" action="testLogin.php" method="POST">
                 <div class="logo1">
-                    <img class="logo" src="assets/images/material-logo.png">
+                    <img class="logo" src="../../assets/images/material-logo.png">
                 </div>
 
                 <h3>Login</h3>
@@ -27,15 +27,13 @@
                 <input type="submit" value="Login" id="btnMud" name="submit">
 
                 <a href="#" class="forgot">Esqueceu a senha?</a>
+                <a href="../../index.php">Voltar</a>
                             
-                <div class="log">
+                <!--<div class="log">
                     <img class="login-g" src="assets/images/google.png">
                     <img class="login-g" src="assets/images/facebook.png">
-                </div>
+                </div>-->
             </form>
-            <a href="../../index.php">
-                    Voltar
-            </a>
         </div>
     </div>
     <script src="script.js">

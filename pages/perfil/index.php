@@ -52,7 +52,7 @@ if(isset($_GET['id'])) {
         <div class="signinForm" id="dFantasma">
             <form class="teste" action="saveEdit.php" method="POST">
                 <div class="logo1">
-                    <img class="logo" src="assets/images/material-logo.png">
+                    <img class="logo" src="../../assets/images/material-logo.png">
                 </div>
 
                 <h3>Editar</h3>
@@ -70,10 +70,10 @@ if(isset($_GET['id'])) {
                     Voltar
                 </a>
                             
-                <div class="log">
-                    <!--<img class="login-g" src="assets/images/google.png">
-                    <img class="login-g" src="assets/images/facebook.png">-->
-                </div>
+                <!--<div class="log">
+                    <img class="login-g" src="assets/images/google.png">
+                    <img class="login-g" src="assets/images/facebook.png">
+                </div>-->
             </form>
         </div>
     </div>
