@@ -36,7 +36,7 @@ if(isset($_POST['submit'])) {
         <div class="signinForm" id="dFantasma">
             <form class="teste" action="index.php" method="POST">
                 <div class="logo1">
-                    <img class="logo" src="../../assets/images/material-logo.png">
+                    <img class="logo" src="../../assets/images/material-logo">
                 </div>
 
                 <h3>Cadastro</h3>
