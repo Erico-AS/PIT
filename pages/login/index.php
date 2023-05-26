@@ -26,7 +26,7 @@
 
                 <input type="submit" value="Login" id="btnMud" name="submit">
 
-                <a href="#" class="forgot">Esqueceu a senha?</a>
+                <a href="../esqueciSenha/recuperaSenha.php" class="forgot">Esqueceu a senha?</a>
                 <a href="../../index.php">Voltar</a>
                             
                 <!--<div class="log">
