@@ -1,3 +1,21 @@
+<?php
+    session_start();
+    include_once('../../service/config.php');
+    include_once('index.php');
+    $novaSenha = $_POST['novaSenha'];
+    $email = $_SESSION['email'];
+
+    if(!validaLogin())
+    {
+        header('Location: ../login');
+        return;
+    }
+
+    if (strlen($novaSenha) >= 8) {
+        $updateSql = "UPDATE usuario SET senha = '$novaSenha' WHERE email = '$email'";
+        $result = $conexao->query($sqlSelect);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
