@@ -2,13 +2,6 @@
     session_start();
     include_once('../../service/config.php');
 
-
-    if(!validaLogin())
-    {
-        header('Location: ../login');
-        return;
-    }
-
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $email = $_POST['email'];
 
@@ -50,8 +43,7 @@
                     <input type="email" name="email">
             </form>
         </div>
-
-        <button>Avançar</button>
+        <input type="submit" value="Enviar" id="btnMud" name="submit">
     </main>
 </body>
 </html>

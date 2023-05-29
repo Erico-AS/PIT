@@ -39,7 +39,7 @@
             </form>
         </div>
 
-        <button>Cadastrar</button>
+        <input type="submit" value="Enviar" id="btnMud" name="submit">
     </main>
 </body>
 </html>

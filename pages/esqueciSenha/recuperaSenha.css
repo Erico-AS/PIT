@@ -63,15 +63,13 @@ input {
     border-radius: 20px;
 }
 
-button {
+#btnMud {
     background-color: lawngreen;
     border-radius: 30px;
     border: none;
     transition: opacity 0.5s ease-out;
-    width: 17vw;
-    height: 5vh;
 }
 
-button:hover {
+#btnMud:hover {
     opacity: 0.6;
 }
