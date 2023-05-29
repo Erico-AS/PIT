@@ -27,3 +27,35 @@
         }
     }
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formap</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="tudo">
+    <div class="container-fundo">
+        
+        <main>
+        <div class="container-login">
+            
+            <form action="">
+                <h1>Encontre sua Conta</h1>
+                <h3>Informe o e-mail associado à sua conta para alterar sua senha.</h3>
+                <input type="email" placeholder="Email">
+                <button>AVANÇAR</button>
+        </form>
+        </div>
+    
+    </div>
+
+</div>
+</main>
+</body>
+</html>
