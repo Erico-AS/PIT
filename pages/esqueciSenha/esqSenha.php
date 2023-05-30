@@ -15,7 +15,7 @@
             if ($result == false) {
                 $assunto = "Recuperação de Senha";
                 $mensagem = "Por favor, acesse o link abaixo para alterar sua senha:\n";
-                $mensagem .= "hhttps://frmp.000webhostapp.com/pages/esqueciSenha/recuperaSenha.php?email=$email";
+                $mensagem .= "https://frmp.000webhostapp.com/pages/esqueciSenha/recuperaSenha.php?email=$email";
 
                 mail($email, $assunto, $mensagem);
 
