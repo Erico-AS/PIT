@@ -1,7 +1,6 @@
 <?php 
 session_start();
     if(isset($_POST['submit']) && !empty($_POST['nameuser']) && !empty($_POST['senha'])){
-        //Acessa
         include_once('../../service/config.php');
         $nameuser = $_POST['nameuser'];
         $senha = $_POST['senha'];
@@ -12,7 +11,7 @@ session_start();
 
 
         if(mysqli_num_rows($result) <= 0){
-           header('Location: index.php');
+           echo "<script>alert('Usuário ou senha incorretos'); window.location.href = 'index.php';</script>";
         }
         else{
             $_SESSION['nome_user'] = $nameuser;
@@ -21,7 +20,7 @@ session_start();
         }
     }
     else{
-        header('Location: index.php');
+        echo "<script>alert('Campos vazios'); window.location.href = 'index.php';</script>";
     }
 
 ?>

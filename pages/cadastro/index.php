@@ -7,12 +7,20 @@ if(isset($_POST['submit'])) {
     $nome = $_POST['nameuser'];
     $email = $_POST['email'];
     $senha = $_POST['senha'];
+    $confirma_senha = $_POST['confirmaSenha'];
 
-    if (!empty($_POST['nameuser']) && !empty($_POST['senha']) && !empty($_POST['email']) && $senha.mb_strlen($senha) >= 8) {
-        $result = mysqli_query($conexao, "INSERT INTO user (nome_user,senha,email) VALUES ('$nome', '$senha', '$email')");
-        header('Location: ../login');
+    if (!empty($_POST['nameuser']) && !empty($_POST['senha']) && !empty($_POST['email']) && strlen($senha) >= 8 && $senha == $confirma_senha) 
+    {
+        $consulta_email = mysqli_query($conexao, "SELECT * from user WHERE email = '$email'");
+        
+        if(mysqli_num_rows($consulta_email) == NULL) {
+            $result = mysqli_query($conexao, "INSERT INTO user (nome_user,senha,email) VALUES ('$nome', '$senha', '$email')");
+            header('Location: ../login/index.php');
+        } else {
+            echo "<script>alert('Email já cadastrado')</script>";
+        }
     } else {
-        echo "<script>alert('Cadastro inválido')</script>";
+        echo "<script>alert('Campos vazios, senha menor que 8 caractéres ou campos de confirmação diferentes. Verifique estes critérios')</script>";
     }
 
 
@@ -36,24 +44,22 @@ if(isset($_POST['submit'])) {
         <div class="signinForm" id="dFantasma">
             <form class="teste" action="index.php" method="POST">
                 <div class="logo1">
-                    <img class="logo" src="../../assets/images/material-logo">
+                    <img class="logo" src="../../assets/images/material-logo.png">
                 </div>
 
                 <h3>Cadastro</h3>
 
                 <div id="formulario">
                     <input type="text" placeholder="Nome de Usuário" name="nameuser">
-                    <input type="text" placeholder="Email" name="email">
+                    <input type="email" placeholder="Email" name="email">
                     <input type="password" placeholder="Senha" name="senha">
-                    <input type="password" placeholder="Confirme sua senha" name="senha">
+                    <input type="password" placeholder="Confirme sua senha" name="confirmaSenha">
                 </div>
 
                 <input type="submit" value="Cadastro" id="btnMud" name="submit">
                 <a href="../../index.php">Voltar</a>
                             
                 <div class="log">
-                    <!--<img class="login-g" src="assets/images/google.png">
-                    <img class="login-g" src="assets/images/facebook.png">-->
                 </div>
             </form>
         </div>

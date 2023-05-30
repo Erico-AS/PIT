@@ -28,6 +28,7 @@
 
                 <a href="../esqueciSenha/index.php" class="forgot">Esqueceu a senha?</a>
                 <a href="../../index.php">Voltar</a>
+
             </form>
         </div>
     </div>

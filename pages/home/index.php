@@ -50,8 +50,8 @@
                     echo "<td>".$user_data['senha']."</td>";
                     echo "<td><a href='../perfil?id=$user_data[id]' class='editar'>Editar</a></td>";
                     echo "</tr>";
-                    }
-                    ?>
+                }
+            ?>
             </tbody>
         </table>
     </div>

@@ -5,9 +5,16 @@
         $novaSenha = $_POST['novaSenha'];
         $email = $_SESSION['email'];
     
-        if (strlen($novaSenha) >= 8) {
-            $updateSql = "UPDATE user SET senha = '$novaSenha' WHERE email = '$email'";
-            $result = mysqli_query($conexao, $updateSql);
+        if (!empty($_POST['novaSenha'])) {
+            if (strlen($novaSenha) >= 8) {
+                $updateSql = "UPDATE user SET senha = '$novaSenha' WHERE email = '$email'";
+                $result = mysqli_query($conexao, $updateSql);
+                header('Location: ../login/index.php');
+            } else {
+                echo '<script>alert("Senha menor que 8 caracteres")</script>';
+            }
+        } else {
+            echo '<script>alert("Campo vazio")</script>';
         }
     }
 ?>
