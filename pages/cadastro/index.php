@@ -57,6 +57,7 @@ if(isset($_POST['submit'])) {
                 </div>
 
                 <input type="submit" value="Cadastro" id="btnMud" name="submit">
+                <a href="../login/index.php">Já Possui Conta?</a>
                 <a href="../../index.php">Voltar</a>
                             
                 <div class="log">

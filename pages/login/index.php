@@ -27,6 +27,7 @@
                 <input type="submit" value="Login" id="btnMud" name="submit">
 
                 <a href="../esqueciSenha/index.php" class="forgot">Esqueceu a senha?</a>
+                <a href="../cadastro/index.php">Não Possui Conta?</a>
                 <a href="../../index.php">Voltar</a>
 
             </form>
