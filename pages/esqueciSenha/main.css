@@ -46,10 +46,10 @@ main {
 }
 
 form {
-    gap: 2px;
+    gap: 13px;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
     width: 68%;
 }
 
@@ -79,6 +79,7 @@ button:hover {
 #btnMud {
     background-color: lawngreen;
     border-radius: 30px;
+    width: 20vw;
     border: none;
     transition: opacity 0.5s ease-out;
 }

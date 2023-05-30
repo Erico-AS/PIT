@@ -1,21 +1,17 @@
 <?php
-    session_start();
-    include_once('../../service/config.php');
-    include_once('index.php');
-    $novaSenha = $_POST['novaSenha'];
-    $email = $_SESSION['email'];
-
-    if(!validaLogin())
-    {
-        header('Location: ../login');
-        return;
-    }
-
-    if (strlen($novaSenha) >= 8) {
-        $updateSql = "UPDATE usuario SET senha = '$novaSenha' WHERE email = '$email'";
-        $result = $conexao->query($sqlSelect);
+    if (isset($_POST['submit'])) {
+        session_start();
+        include_once('../../service/config.php');
+        $novaSenha = $_POST['novaSenha'];
+        $email = $_SESSION['email'];
+    
+        if (strlen($novaSenha) >= 8) {
+            $updateSql = "UPDATE user SET senha = '$novaSenha' WHERE email = '$email'";
+            $result = mysqli_query($conexao, $updateSql);
+        }
     }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,10 +32,9 @@
             <form action="recuperaSenha.php" method="POST">
                     <label>Senha:</label>
                     <input type="text" name="novaSenha">
+                    <input type="submit" value="Enviar" id="btnMud" name="submit">
             </form>
         </div>
-
-        <input type="submit" value="Enviar" id="btnMud" name="submit">
     </main>
 </body>
 </html>
