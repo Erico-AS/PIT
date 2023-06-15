@@ -22,13 +22,11 @@
             while($user_data = mysqli_fetch_assoc($result)){
                 $id = $user_data['id'];
                 $nome = $user_data['nome_user'];
-                $email = $user_data['email'];
-                $senha = $user_data['senha'];
+                $about = $user_data['About you'];
+                $profile = $user_data['Profile'];
             }
                 
             $_SESSION['nameuser'] = $nome;
-            $_SESSION['email'] = $email;
-            $_SESSION['senha'] = $senha;
         }
         else {
             header('Location: ../home');
@@ -58,8 +56,8 @@
 
                 <div id="formulario">
                     <input type="text" placeholder="Nome de Usuário" name="nameuser" value="<?php echo $nome?>">
-                    <input type="email" placeholder="Email" name="email" value="<?php echo $email?>">
-                    <input type="text" placeholder="Senha" name="senha" value="<?php echo $senha?>">
+                    <input type="email" placeholder="Email" name="About you" value="<?php echo $about?>">
+                    <input type="file" name="Profile" id = "image" accept=".jpg, .jpeg, .png">
                 </div>
 
                 <input type="hidden" name="id" value="<?php echo $id?>">

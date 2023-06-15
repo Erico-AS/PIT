@@ -76,6 +76,7 @@ body {
 }
 
 .formBx {
+    position: absolute;
     left: 10vw;
     width: 40%;
     height: 93vh;

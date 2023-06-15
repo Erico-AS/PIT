@@ -13,13 +13,13 @@
 
         $id = intval($_POST['id']);
         $nome = $_POST['nameuser'];
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
+        $about = $_POST['About you'];
+        $profile = $_POST['Profile'];
         
-        if (!empty($nome) && !empty($email) && !empty($senha)) {
-            $sqlInsert = "UPDATE user SET nome_user=?, email=?, senha=? WHERE id=?";
+        if (!empty($nome) && !empty($about)) {
+            $sqlInsert = "UPDATE user SET nome_user = ?, About you = ?, Profile = ? WHERE id=?";
             $stmt = $conexao->prepare($sqlInsert);
-            $stmt->bind_param("sssi", $nome, $email, $senha, $id);
+            $stmt->bind_param("sssi", $nome, $about, $profile, $id);
             $stmt->execute();
             header('Location: ../home');    
         } else {
