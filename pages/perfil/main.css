@@ -122,9 +122,14 @@ h3 {
     height: 80px;
 }
 
-.logo1 {
+.profile {
+    width: 125px;
+    height: 125px;
     display: flex;
     justify-content: center;
+    align-self: center;
+    margin-bottom: 15px;
+    border-radius: 100%;
 }
 .submit {
     background-color: lawngreen;

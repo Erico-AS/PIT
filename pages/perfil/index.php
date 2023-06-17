@@ -22,8 +22,8 @@
             while($user_data = mysqli_fetch_assoc($result)){
                 $id = $user_data['id'];
                 $nome = $user_data['nome_user'];
-                $about = $user_data['About you'];
-                $profile = $user_data['Profile'];
+                $about = $user_data['About'];
+                $image = $user_data['image'];
             }
                 
             $_SESSION['nameuser'] = $nome;
@@ -42,22 +42,28 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style>
+        .profile {
+            background-image: url("imgs/<?php echo $image ?>");
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
     <script src='main.js'></script>
 </head>
 <body>
     <div class="formBx">
         <div class="signinForm" id="dFantasma">
-            <form class="teste" action="saveEdit.php" method="POST">
-                <div class="logo1">
-                    <img class="logo" src="../../assets/images/material-logo.png">
+            <form class="teste" action="saveEdit.php" method="POST" enctype="multipart/form-data">
+                <div class="profile">
                 </div>
 
                 <h3>Editar</h3>
 
                 <div id="formulario">
                     <input type="text" placeholder="Nome de Usuário" name="nameuser" value="<?php echo $nome?>">
-                    <input type="email" placeholder="Email" name="About you" value="<?php echo $about?>">
-                    <input type="file" name="Profile" id = "image" accept=".jpg, .jpeg, .png">
+                    <input type="text" placeholder="About you" name="about" value="<?php echo $about?>">
+                    <input type="file" name="image" id= "image" accept=".jpg, .jpeg, .png">
                 </div>
 
                 <input type="hidden" name="id" value="<?php echo $id?>">
