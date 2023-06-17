@@ -44,7 +44,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <style>
         .profile {
-            background-image: url("imgs/<?php echo $image ?>");
+            background-image: url("imgs/<?php echo $image != "" ? $image : "noprofile.png" ?>");
             background-position: center;
             background-size: cover;
         }
