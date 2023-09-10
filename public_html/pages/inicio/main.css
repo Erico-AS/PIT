@@ -110,6 +110,11 @@ a:hover {
 }
 
 @media (max-width:785px) {
+    
+    .container-detalhes {
+        margin-top: 5vh; 
+    }
+
     .navigation{
         z-index: 9999;
         padding: 18px 20px;
@@ -185,7 +190,7 @@ a:hover {
     width: 80%;
     height: 70%;
     margin: 0 auto;
-    margin-top: 50vh;
+    margin-top: 10vh;
     margin-bottom: 30vh;
 }
 .container-detalhes h1{
