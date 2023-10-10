@@ -154,8 +154,8 @@ body {
 }
 
 .left-column {
-    width: 50%; /* A coluna da esquerda ocupa 50% da largura da tela */
-    float: left; /* Faz com que a coluna flutue à esquerda */
+    width: 50%; 
+    float: left; 
     padding: 20px;
     margin-right: 50%;
     margin-top: -5%;
@@ -175,13 +175,13 @@ body {
 }
 
 .profile-image {
-    max-width: 450px; /* Largura máxima desejada */
-    max-height: 450px; /* Altura máxima desejada */
-    width: 100%; /* Faz a imagem preencher a largura máxima definida */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 50%; /* Transforma a imagem em um círculo */
-    display: block; /* Para remover qualquer espaço extra abaixo da imagem */
-    margin: 0 auto; /* Para centralizar horizontalmente a imagem */
+    max-width: 450px; 
+    max-height: 450px; 
+    width: 100%; 
+    height: auto; 
+    border-radius: 
+    display: block; 
+    margin: 0 auto; 
     margin-top: -55%;
 }
 
@@ -189,7 +189,7 @@ body {
     position: absolute;
     bottom: 18%;
     right: 23%;
-    background-color: #73C883; /* Cor de fundo do botão */
+    background-color: #73C883; 
     color: white;
     border: none;
     padding: 5px 10px;
@@ -201,7 +201,7 @@ body {
     position: absolute;
     bottom: 18%;
     left: 23%;
-    background-color: #fff; /* Cor de fundo do botão */
+    background-color: #fff; 
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -210,36 +210,36 @@ body {
 
 .left-column button {
     border-radius: 10px;
-    background-color: #73C883; /* Cor de fundo do botão */
+    background-color: #73C883; 
     color: white;
     border: none;
     padding: 5px 10px;
 }
 
 .left-column h2 {
-    margin-top: 0; /* Remove a margem superior padrão dos cabeçalhos */
+    margin-top: 0; 
 }
 
-/* Estilos para a borda superior entre os itens */
+
 .separator {
-    border-top: 1px solid #ccc; /* Adiciona uma borda superior */
-    margin-top: 20px; /* Adiciona espaçamento vertical */
-    padding-top: 20px; /* Adiciona espaçamento vertical interno */
+    border-top: 1px solid #ccc; 
+    margin-top: 20px; 
+    padding-top: 20px; 
 }
 
 .left-column p {
-    margin-top: 0; /* Remove a margem superior padrão dos parágrafos */
-    margin-bottom: 15px; /* Adiciona espaçamento inferior */
+    margin-top: 0; 
+    margin-bottom: 15px;
     margin-left: 30px;
 }
 
 .left-column h1 {
-    margin-top: 0; /* Remove a margem superior padrão dos parágrafos */
-    margin-bottom: 80px; /* Adiciona espaçamento inferior */
+    margin-top: 0;
+    margin-bottom: 80px; 
     margin-left: 300px;
 }
 
 .left-column h2 {
-    margin-top: 0; /* Remove a margem superior padrão dos parágrafos */
-    margin-bottom: 20px; /* Adiciona espaçamento inferior */
+    margin-top: 0; 
+    margin-bottom: 20px; 
 }
